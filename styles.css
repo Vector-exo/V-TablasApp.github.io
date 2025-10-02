@@ -29,17 +29,17 @@ h1 {
 }
 
 .tabla {
-  display: grid;                        
-  grid-template-columns: repeat(18,1fr);
-  grid-auto-rows: 50px;                 
-  gap: 5px;                             
-  background-color: rgba(107, 107, 107, 0.358); 
-  padding: 5px;                         
-  border-radius: 10px;                  
-  position: relative;                   
-  max-width: 100%;                      
-  overflow-x: auto;                     /* Muestra scroll horizontal si el contenido se desborda */
-  min-width: 1000px;                    /* Ancho mínimo de la tabla para evitar que las celdas sean demasiado pequeñas */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* Cambia esto */
+  grid-auto-rows: 50px;
+  gap: 5px;
+  background-color: rgba(107, 107, 107, 0.358);
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 100%;
+  overflow-x: auto;
+  min-width: 0; /* Permite que se ajuste mejor */
 }
 
 a {
@@ -161,6 +161,42 @@ a {
   gap: 10px;
   margin: 20px 0;
   justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 0;
+  background: #222;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-escuela {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.footer-autores {
+  font-size: 0.95em;
+  opacity: 0.85;
 }
 
 /* admira la obra maestra de tabla que tenes aca arriba jaja. Besos :) */

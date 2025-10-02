@@ -3,7 +3,7 @@
 tsParticles.load("particles-js", {
   particles: {
     number: {
-      value: 150, // cantidad de partículas
+      value: 80, // cantidad de partículas
       density: { enable: true, value_area: 800 }
     },
     color: { value: "#9c2afffb" }, // color de partículas
