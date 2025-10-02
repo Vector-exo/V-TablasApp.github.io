@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla Periódica de Apps</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script src="particles-config.js"></script>
+
+<h1>Tabla Periódica de Aplicaciones</h1>
+
+<div class="menu-categorias"> <!-- menu Botones ñeñe-->
+  <button data-cat="all" class="activo">Todos</button>
+  <button data-cat="so">Sistemas Operativos</button>
+  <button data-cat="ide">IDE / Editores</button>
+  <button data-cat="redes">Redes</button>
+  <button data-cat="dam">Diseño / Animación</button>
+  <button data-cat="vr">Virtualización / Contenedores</button>
+  <button data-cat="bd">Bases de Datos</button>
+  <button data-cat="ofi">Ofimática</button>
+  <button data-cat="edicion">Edición Multimedia</button>
+  <button data-cat="cs">ciberseguridad</button>
+  <button data-cat="cgcodigo">Control de versiones / Código</button>
+  <button data-cat="std">Soporte técnico / Diagnóstico </button>
+  <button data-cat="dwf">Diseño web / Frontend</button>
+  <button data-cat="vca">Virtualización / Contenedores avanzados</button>
+  <button data-cat="sep">Seguridad / pentesting</button>
+  <button data-cat="em">Edición / Música</button>
+  <button data-cat="hrc">Backup / Cloud Storage</button>
+  <button data-cat="hcc">Herramientas Comunicación / Colaboración</button>
+  <button data-cat="dp">Documentacion / Productividad</button>
+  <button data-cat="ap">automatizacion / productividad</button>
+</div>
+
+<div class="contenedor-tabla">
+  <div class="tabla">
+    <!-- columna 1: Sistemas Operativos -->
+   
+      <a href="https://www.microsoft.com/windows" target="_blank">
+        <div class="elemento so" style="grid-column: 1; grid-row: 1;">Win
+          <div class="info-extra">Windows: Sistema operativo de Microsoft.</div>
+        </div>
+      </a>
+  
+      <a href="https://www.kernel.org/" target="_blank">
+        <div class="elemento so" style="grid-column: 1; grid-row: 2;">Linux
+          <div class="info-extra">Núcleo de muchos sistemas libres.</div>
+        </div>
+      </a>
+
+      <a href="https://www.apple.com/macos/" target="_blank">
+        <div class="elemento so" style="grid-column: 1; grid-row: 3;">MacOS
+          <div class="info-extra">Sistema de las computadoras Apple.</div>
+        </div>
+      </a>
+
+      <a href="https://ubuntu.com/" target="_blank">  
+        <div class="elemento so" style="grid-column: 1; grid-row: 4;">Ubuntu
+          <div class="info-extra">Distribución Linux popular y amigable.</div>
+        </div>
+      </a>
+
+      <a href="https://www.kali.org/" target="_blank">
+        <div class="elemento so" style="grid-column: 1; grid-row: 5;">Kali Linux
+          <div class="info-extra">Linux especializado en pentesting.</div>
+        </div>
+      </a>
+
+      <a href="https://getfedora.org/" target="_blank">
+        <div class="elemento so" style="grid-column: 1; grid-row: 6;">Fedora
+          <div class="info-extra">Linux de innovación y comunidad</div>
+        </div>
+      </a>
+
+      <a href="https://www.debian.org/" target="_blank">
+        <div class="elemento so" style="grid-column: 1; grid-row: 7;">Debian
+          <div class="info-extra">Distribución base para muchos Linux.</div>
+        </div>
+      </a>
+
+    <!-- columna 2: Sistemas Operativos y virtualizacion -->
+
+      <a href="https://archlinux.org/" target="_blank">
+        <div class="elemento so" style="grid-column: 2; grid-row: 2;">Arch Linux
+          <div class="info-extra">Linux minimalista y altamente personalizable.</div>
+        </div>
+      </a>
+
+    <!-- columna 2: S.O y vr -->
+
+      <a href="https://linuxcontainers.org/lxc/" target="_blank">
+        <div class="elemento vr" style="grid-column: 2; grid-row: 3;">LXC
+          <div class="info-extra">Contenedores ligeros para Linux.</div>
+        </div>
+      </a>
+
+      <a href="https://www.parallels.com/" target="_blank">
+        <div class="elemento vr" style="grid-column: 2; grid-row: 4;">Parallels
+          <div class="info-extra">Virtualización de sistemas en Mac.</div>
+        </div>
+      </a>
+
+      <a href="https://www.virtualbox.org/" target="_blank">
+        <div class="elemento vr" style="grid-column: 2; grid-row: 5;">VirtualBox
+          <div class="info-extra">Virtualización gratuita y de código abierto.</div>
+        </div>
+      </a>
+
+      <a href="https://www.vmware.com/" target="_blank">
+        <div class="elemento vr" style="grid-column: 2; grid-row: 6;">VMware
+          <div class="info-extra">Soluciones de virtualización empresariales.</div>
+        </div>
+      </a>
+
+      <a href="https://www.docker.com/" target="_blank">
+        <div class="elemento vr" style="grid-column: 2; grid-row: 7;">Docker
+          <div class="info-extra">Contenedores para aplicaciones.</div>
+        </div>
+      </a>
+
+
+    <!-- Hueco -->
+      <div class="hueco" style="grid-column: 0; grid-row: 1;"></div>
+
+    <!-- columna 3: db -->
+
+      <a href="https://www.mysql.com" target="_blank">
+        <div class="elemento bd" style="grid-column: 3; grid-row: 4;">MySQL
+          <div class="info-extra">Base de datos relacional muy popular.</div>
+        </div>
+      </a>
+      
+      <a href="https://www.postgresql.org" target="_blank">
+        <div class="elemento bd" style="grid-column: 3; grid-row: 5;">PostgreSQL
+          <div class="info-extra">Base de datos avanzada y de código abierto.</div>
+        </div>
+      </a>
+
+      <a href="https://www.mongodb.com" target="_blank">
+        <div class="elemento bd" style="grid-column: 3; grid-row: 6;">MongoDB
+          <div class="info-extra">Base de datos NoSQL orientada a documentos.</div>
+        </div>
+      </a>
+      
+      <a href="https://www.sqlite.org/" target="_blank">
+        <div class="elemento bd" style="grid-column: 3; grid-row: 7;">SQLite
+          <div class="info-extra">BD ligera usada en móviles y apps.</div>
+        </div>
+      </a>
+
+    <!-- columna 4: hueco -->
+     <div class="hueco" style="grid-column: 0; grid-row: 4;"></div>
+
+    <!-- Redes columna 5 y 6 Fila 4,5,6,7 -->
+
+      <a href="https://www.wireshark.org/" target="_blank">
+        <div class="elemento redes" style="grid-column: 5; grid-row: 4;">Wireshark
+          <div class="info-extra">Analizador de tráfico de red.</div>
+        </div>
+      </a>
+
+      <a href="https://www.nmap.org/" target="_blank">
+        <div class="elemento redes" style="grid-column: 5; grid-row: 5;">Nmap
+          <div class="info-extra">Escáner de redes y puertos.</div>
+        </div>
+      </a>
+
+      <a href="https://www.snort.org/" target="_blank">
+        <div class="elemento redes" style="grid-column: 5; grid-row: 6;">Snort
+          <div class="info-extra">Sistema de detección de intrusos.</div>
+        </div>
+      </a>
+
+      <a href="https://openvpn.net/" target="_blank">
+        <div class="elemento redes" style="grid-column: 5; grid-row: 7;">OpenVPN
+          <div class="info-extra">Solución de VPN segura.</div>
+        </div>
+      </a>
+
+      <a href="https://www.postman.com/" target="_blank">
+        <div class="elemento redes" style="grid-column: 6; grid-row: 4;">Postman
+          <div class="info-extra">Pruebas y desarrollo de APIs.</div>
+        </div>
+      </a>
+
+      <a href="https://filezilla-project.org/" target="_blank">
+        <div class="elemento redes" style="grid-column: 6; grid-row: 5;">FileZilla
+          <div class="info-extra">Cliente FTP/SFTP libre.</div>
+        </div>
+      </a>
+
+      <a href="https://www.tenable.com/products/nessus" target="_blank">
+        <div class="elemento redes" style="grid-column: 6; grid-row: 6;">Nessus
+          <div class="info-extra">Solución de VPN segura.</div>
+        </div>
+      </a>
+
+      <a href="https://angryip.org/" target="_blank">
+        <div class="elemento redes" style="grid-column: 6; grid-row: 7;">Angry IP Scanner
+          <div class="info-extra">Escáner de IPs ligero.</div>
+        </div>
+      </a>
+    <!-- columna 5 al 18 con Fila 9 y 10 parte de abajo de la tabla  -->
+
+      <a href="https://code.visualstudio.com/" target="_blank">
+          <div class="elemento ide" style="grid-column: 5; grid-row: 9;">VSCode
+            <div class="info-extra">Editor de código ligero y extensible.</div>
+          </div>
+      </a>
+
+      <a href="https://www.jetbrains.com/pycharm" target="_blank">
+          <div class="elemento ide" style="grid-column: 5; grid-row: 10;">PyCharm
+            <div class="info-extra">IDE para Python con depuración avanzada.</div>
+          </div>
+      </a>
+
+      <a href="https://www.jetbrains.com/idea" target="_blank">
+          <div class="elemento ide" style="grid-column: 6; grid-row: 9;">IntelliJ IDEA
+            <div class="info-extra">IDE potente para Java y más.</div>
+          </div>
+      </a>
+
+      <a href="https://www.eclipse.org/" target="_blank">
+          <div class="elemento ide" style="grid-column: 6; grid-row: 10;">Eclipse
+            <div class="info-extra">IDE clásico, usado en Java y C++.</div>
+          </div>
+      </a>
+
+      <a href="https://developer.android.com/studio" target="_blank">
+          <div class="elemento ide" style="grid-column: 7; grid-row: 9;">Android Studio
+            <div class="info-extra">IDE oficial para apps Android.</div>
+          </div>
+      </a>
+
+      <a href="https://notepad-plus-plus.org/" target="_blank">
+          <div class="elemento ide" style="grid-column: 7; grid-row: 10;">Notepad++
+            <div class="info-extra">Editor de texto liviano para Windows.</div>
+          </div>
+      </a>
+
+      <a href="https://posit.co/download/rstudio-desktop/" target="_blank">
+          <div class="elemento ide" style="grid-column: 8; grid-row: 9;">RStudio
+            <div class="info-extra">IDE para programación en R.</div>
+          </div>
+      </a>
+
+      <a href="https://www.sublimetext.com/" target="_blank">
+          <div class="elemento ide" style="grid-column: 8; grid-row: 10;">Sublime Text
+            <div class="info-extra">Editor rápido y personalizable.</div>
+          </div>
+      </a>
+
+      <a href="https://github.blog/2022-06-08-sunsetting-atom/" target="_blank">
+          <div class="elemento ide" style="grid-column: 9; grid-row: 9;">Atom
+            <div class="info-extra">Editor libre (descontinuado).</div>
+          </div>
+      </a>
+
+      <a href="https://www.bluej.org/" target="_blank">
+          <div class="elemento ide" style="grid-column: 9; grid-row: 10;">BlueJ
+            <div class="info-extra"></div>
+          </div>
+      </a>
+
+      <a href="https://www.microsoft.com/es-ar/microsoft-365/onenote/digital-note-taking-app" target="_blank">
+          <div class="elemento ofi" style="grid-column: 10; grid-row: 9;">OneNote
+            <div class="info-extra">Notas y organización digital.</div>
+          </div>
+      </a>
+
+      <a href="https://evernote.com/" target="_blank">
+          <div class="elemento ofi" style="grid-column: 10; grid-row: 10;">Evernote
+            <div class="info-extra">Gestión de notas y proyectos.</div>
+          </div>
+      </a>
+
+      <a href="https://obsidian.md/" target="_blank">
+          <div class="elemento ofi" style="grid-column: 11; grid-row: 9;">Obsidian
+            <div class="info-extra">Notas enlazadas y productividad personal.</div>
+          </div>
+      </a>
+
+      <a href="https://slack.com/" target="_blank">
+          <div class="elemento ofi" style="grid-column: 11; grid-row: 10;">Slack
+            <div class="info-extra">Comunicación y colaboración en equipo.</div>
+          </div>
+      </a>
+
+      <a href="https://www.microsoft.com/es-ar/microsoft-teams/group-chat-software" target="_blank">
+          <div class="elemento ofi" style="grid-column: 12; grid-row: 9;">Microsoft Teams
+            <div class="info-extra">Trabajo colaborativo y videoconferencias.</div>
+          </div>
+      </a>
+
+      <a href="https://www.gimp.org/" target="_blank">
+          <div class="elemento edicion" style="grid-column: 12; grid-row: 10;">GIMP
+            <div class="info-extra ">editor de imágenes libre y gratuito.</div>
+          </div>
+      </a>
+      
+      <a href="https://www.canva.com/" target="_blank">
+          <div class="elemento edicion" style="grid-column: 13; grid-row: 9;">Canva
+            <div class="info-extra ">Diseño gráfico online fácil de usar.</div>
+          </div>
+      </a>
+
+      <a href="https://filmora.wondershare.com/" target="_blank">
+          <div class="elemento edicion" style="grid-column: 13; grid-row: 10;">Filmora
+            <div class="info-extra">Edición de video sencilla y completa.</div>
+          </div>
+      </a>
+
+      <a href="https://www.capcut.com/" target="_blank">
+          <div class="elemento edicion" style="grid-column: 14; grid-row: 9;">CapCut
+            <div class="info-extra">Editor de video rápido para PC y móvil.</div>
+          </div>
+      </a>
+
+      <a href="https://www.audacityteam.org/" target="_blank">
+          <div class="elemento edicion" style="grid-column: 14; grid-row: 10;">Audacity
+            <div class="info-extra">Edición de audio libre y multiplataforma.</div>
+          </div>
+      </a>
+
+      <a href="https://www.adobe.com/products/premiere.html" target="_blank">
+          <div class="elemento edicion" style="grid-column: 15; grid-row: 9;">Premiere Pro
+            <div class="info-extra ">Edición profesional de video.</div>
+          </div>
+      </a>
+
+      <a href="https://www.adobe.com/products/photoshop.html" target="_blank">
+          <div class="elemento edicion" style="grid-column: 15; grid-row: 10;">Photoshop
+            <div class="info-extra ">Edición profesional de imágenes.</div>
+          </div>
+      </a>
+
+      <a href="https://www.metasploit.com/" target="_blank">
+        <div class="elemento cs" style="grid-column: 16; grid-row: 9;">Metasploit
+          <div class="info-extra">Plataforma de pruebas de penetración.</div>
+        </div>
+      </a>
+
+      <a href="https://portswigger.net/burp" target="_blank">
+        <div class="elemento cs" style="grid-column: 16; grid-row: 10;">Burp Suite
+          <div class="info-extra">Herramienta para pruebas de seguridad web.</div>
+        </div>
+      </a>
+
+      <a href="https://www.openvas.org/" target="_blank">
+        <div class="elemento cs" style="grid-column: 17; grid-row: 9;">OpenVAS
+          <div class="info-extra">Escáner de vulnerabilidades de código abierto.</div>
+        </div>
+      </a>
+
+      <a href="https://www.aircrack-ng.org/" target="_blank">
+        <div class="elemento cs" style="grid-column: 17; grid-row: 10;">Aircrack-ng
+          <div class="info-extra">Auditoría de redes inalámbricas.</div>
+        </div>
+      </a>
+
+      <a href="https://www.kali.org/tools/" target="_blank">
+        <div class="elemento cs" style="grid-column: 18; grid-row: 9;">Kali Tools
+          <div class="info-extra">Colección de herramientas de pentesting.</div>
+        </div>
+      </a>
+
+      <a href="https://www.wireshark.org/" target="_blank">
+        <div class="elemento cs" style="grid-column: 18; grid-row: 10;">Wireshark 2
+          <div class="info-extra">Analizador de tráfico de red avanzado.</div>
+        </div>
+      </a>
+
+      <!-- columna 7 al 19 con Fila 4 a 7 parte del medio y derecha de la tabla  -->
+
+      <!-- Control de Versiones / Gestión de Código (fila 4,5,6 y 7.  columnas 7 y 8) -->
+      <a href="https://git-scm.com/" target="_blank">
+        <div class="elemento cgcodigo" style="grid-column: 7; grid-row: 4;">Git
+          <div class="info-extra">Sistema de control de versiones distribuido.</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/" target="_blank">
+        <div class="elemento cgcodigo" style="grid-column: 7; grid-row: 5;">GitHub
+          <div class="info-extra">Plataforma de repositorios online.</div>
+        </div>
+      </a>
+
+      <a href="https://www.gitkraken.com/" target="_blank">
+        <div class="elemento cgcodigo" style="grid-column: 7; grid-row: 6;">GitKraken
+          <div class="info-extra">Cliente gráfico para Git.</div>
+        </div>
+      </a>
+
+      <a href="https://bitbucket.org/" target="_blank">
+        <div class="elemento cgcodigo" style="grid-column: 7; grid-row: 7;">Bitbucket
+          <div class="info-extra">Hosting Git con integración Atlassian.</div>
+        </div>
+      </a>
+
+      <a href="https://subversion.apache.org/" target="_blank">
+        <div class="elemento cgcodigo" style="grid-column: 8; grid-row: 4;">SVN
+          <div class="info-extra">Control de versiones centralizado.</div>
+        </div>
+      </a>
+
+      <a href="https://www.mercurial-scm.org/" target="_blank">
+        <div class="elemento cgcodigo" style="grid-column: 8; grid-row: 5;">Mercurial
+          <div class="info-extra">Alternativa ligera a Git.</div>
+        </div>
+      </a>
+      
+      <a href="https://www.sourcetreeapp.com/" target="_blank">
+        <div class="elemento cgcodigo" style="grid-column: 8; grid-row: 6;">SourceTree
+          <div class="info-extra">Cliente gráfico para Git y Mercurial.</div>
+        </div>
+      </a>
+
+      <!-- Soporte tecnico / diagnostico (fila 4,5,6 y 7. columnas 8,9 y 10) -->
+
+      <a href="https://www.ccleaner.com/" target="_blank">
+        <div class="elemento std" style="grid-column: 8; grid-row: 7;">CCleaner
+          <div class="info-extra">Limpieza y optimización del sistema.</div>
+        </div>
+      </a>
+
+      <a href="https://www.ccleaner.com/speccy" target="_blank">
+        <div class="elemento std" style="grid-column: 9; grid-row: 4;">Speccy
+          <div class="info-extra">Información detallada del hardware.</div>
+        </div>
+      </a>
+
+      <a href="https://www.cpuid.com/softwares/hwmonitor.html" target="_blank">
+        <div class="elemento std" style="grid-column: 9; grid-row: 5;">HWMonitor
+          <div class="info-extra">Monitor de temperatura y voltajes.</div>
+        </div>
+      </a>
+
+      <a href="https://crystalmark.info/en/software/crystaldiskinfo/" target="_blank">
+        <div class="elemento std" style="grid-column: 9; grid-row: 6;">CrystalDisk
+          <div class="info-extra">Estado de discos duros y SSD.</div>
+        </div>
+      </a>
+
+      <a href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">
+        <div class="elemento std" style="grid-column: 9; grid-row: 7;">CPU-Z
+          <div class="info-extra">Información detallada de CPU y memoria.</div>
+        </div>
+      </a>
+
+      <a href="https://www.aida64.com/" target="_blank">
+        <div class="elemento std" style="grid-column: 10; grid-row: 4;">AIDA64
+          <div class="info-extra">Diagnóstico y benchmark de hardware.</div>
+        </div>
+      </a>
+
+      <!-- Documentacion / Productividad (fila 4,5,6 y 7. columnas 10 y 11) -->
+
+      <a href="https://www.microsoft.com/es-ar/microsoft-365/word" target="_blank">
+        <div class="elemento dp" style="grid-column: 10; grid-row: 5;">Word
+          <div class="info-extra">Procesador de texto profesional.</div>
+        </div>
+      </a>
+
+      <a href="https://www.microsoft.com/es-ar/microsoft-365/excel" target="_blank">
+        <div class="elemento dp" style="grid-column: 10; grid-row: 6;">Excel
+          <div class="info-extra">Hojas de cálculo y análisis de datos.</div>
+        </div>
+      </a>
+
+      <a href="https://www.microsoft.com/es-ar/microsoft-365/powerpoint" target="_blank">
+        <div class="elemento dp" style="grid-column: 10; grid-row: 7;">PowerPoint
+          <div class="info-extra">Presentaciones profesionales.</div>
+        </div>
+      </a>
+
+      <a href="https://www.libreoffice.org/" target="_blank">
+        <div class="elemento dp" style="grid-column: 11; grid-row: 4;">LibreOffice
+          <div class="info-extra">Suite ofimática libre y completa.</div>
+        </div>
+      </a>
+      
+      <a href="https://docs.google.com/" target="_blank">
+        <div class="elemento dp" style="grid-column: 11; grid-row: 5;">Google Docs
+          <div class="info-extra">Procesador de texto online colaborativo.</div>
+        </div>
+      </a>
+
+      <a href="https://www.notion.so/" target="_blank">
+        <div class="elemento dp" style="grid-column: 11; grid-row: 6;">Notion
+          <div class="info-extra">Organización, notas y gestión de proyectos.</div>
+        </div>
+      </a>
+
+
+      <!-- Diseño Web / Frontend (fila 4,5,6 y 7. columnas 11 y 13) -->
+
+      <a href="https://www.figma.com/" target="_blank">
+        <div class="elemento dwf" style="grid-column: 11; grid-row: 7;">Figma
+          <div class="info-extra">Diseño UI/UX colaborativo online.</div>
+        </div>
+      </a>
+
+      <a href="https://helpx.adobe.com/support/xd.html" target="_blank">
+        <div class="elemento dwf" style="grid-column: 12; grid-row: 4;">Adobe XD
+          <div class="info-extra">Diseño y prototipado UX/UI profesional.</div>
+        </div>
+      </a>
+
+      <a href="https://www.sketch.com/" target="_blank">
+        <div class="elemento dwf" style="grid-column: 12; grid-row: 5;">Sketch
+          <div class="info-extra">Diseño vectorial y prototipos (MacOS).</div>
+        </div>
+      </a>
+
+      <a href="https://getbootstrap.com/" target="_blank">
+        <div class="elemento dwf" style="grid-column: 12; grid-row: 6;">Bootstrap
+          <div class="info-extra">Framework CSS para diseño responsivo.</div>
+        </div>
+      </a>
+
+      <a href="https://tailwindcss.com" target="_blank">
+        <div class="elemento dwf" style="grid-column: 12; grid-row: 7;">Tailwind CSS
+          <div class="info-extra">Framework CSS utilitario moderno.</div>
+        </div>
+      </a>
+
+      <a href="https://codepen.io/" target="_blank">
+        <div class="elemento dwf" style="grid-column: 13; grid-row: 4;">CodePen
+          <div class="info-extra">Editor y comunidad para HTML/CSS/JS online.</div>
+        </div>
+      </a>
+
+      <a href="https://reactjs.org/" target="_blank">
+        <div class="elemento dwf" style="grid-column: 13; grid-row: 5;">React
+          <div class="info-extra">Librería JavaScript para interfaces interactivas.</div>
+        </div>
+      </a>
+
+      <!-- Virtualización / Contenedores avanzados (fila 4,5,6 y 7. columnas 13 y 14) -->
+
+      <a href="https://linuxcontainers.org/lxc/" target="_blank">
+        <div class="elemento vca" style="grid-column: 13; grid-row: 6;">LXC
+          <div class="info-extra">Contenedores ligeros para Linux.</div>
+        </div>
+      </a>
+
+      <a href="https://www.parallels.com/" target="_blank">
+        <div class="elemento vca" style="grid-column: 13; grid-row: 7;">Parallels
+          <div class="info-extra">Virtualización de sistemas en Mac.</div>
+        </div>
+      </a>
+
+      <a href="https://www.qemu.org/" target="_blank">
+        <div class="elemento vca" style="grid-column: 14; grid-row: 5;">QEMU
+          <div class="info-extra">Emulador y virtualizador de hardware.</div>
+        </div>
+      </a>
+
+      <a href="https://www.vmware.com/products/workstation-player.html" target="_blank">
+        <div class="elemento vca" style="grid-column: 14; grid-row: 6;">VMware Player
+          <div class="info-extra">Virtualización gratuita para PC.</div>
+        </div>
+      </a>
+
+      <a href="https://docs.docker.com/engine/swarm/" target="_blank">
+        <div class="elemento vca" style="grid-column: 14; grid-row: 7;">Docker Swarm
+          <div class="info-extra">Orquestación de contenedores Docker.</div>
+        </div>
+      </a>
+
+      <!--  Seguridad / Ethical Hacking / Pentesting (fila 4,5,6 y 7. columnas 14 y 15)-->
+
+      <a href="https://www.metasploit.com/" target="_blank">
+        <div class="elemento sep" style="grid-column: 14; grid-row: 2;">Metasploit
+          <div class="info-extra">Plataforma de pruebas de penetración.</div>
+        </div>
+      </a>
+
+      <a href="https://portswigger.net/burp" target="_blank">
+        <div class="elemento sep" style="grid-column: 14; grid-row: 3;">Burp Suite
+          <div class="info-extra">Herramienta para pruebas de seguridad web.</div>
+        </div>
+      </a>
+
+      <a href="https://www.openvas.org/" target="_blank">
+        <div class="elemento sep" style="grid-column: 14; grid-row: 4;">OpenVAS 
+          <div class="info-extra">Escáner de vulnerabilidades de código abierto.</div>
+        </div>
+      </a>
+
+      <a href="https://www.aircrack-ng.org/" target="_blank">
+        <div class="elemento sep" style="grid-column: 15; grid-row: 2;">Aircrack-ng
+          <div class="info-extra">Auditoría de redes inalámbricas.</div>
+        </div>
+      </a>
+
+      <a href="https://www.kali.org/tools/" target="_blank">
+        <div class="elemento sep" style="grid-column: 15; grid-row: 3;">Kali Tools
+          <div class="info-extra">Colección de herramientas de pentesting.</div>
+        </div>
+      </a>
+
+      <a href="https://www.wireshark.org/" target="_blank">
+        <div class="elemento sep" style="grid-column: 15; grid-row: 4;">Wireshark2
+          <div class="info-extra">Analizador de tráfico de red avanzado</div>
+        </div>
+      </a>
+
+      <!-- Diseño 3D / Animación / Multimedia avanzada (fila 2,3,4,5,6 y 7. columnas 15 y 16) -->
+
+      <a href="https://www.blender.org/" target="_blank">
+        <div class="elemento dam" style="grid-column: 15; grid-row: 5;">Blender
+          <div class="info-extra">Modelado, animación y render 3D libre.</div>
+        </div>
+      </a>
+
+      <a href="https://www.autodesk.com/products/maya/overview" target="_blank">
+        <div class="elemento dam" style="grid-column: 15; grid-row: 6;">Maya
+          <div class="info-extra">Software profesional de animación y modelado 3D.</div>
+        </div>
+      </a>
+
+      <a href="https://www.autodesk.com/products/3ds-max/overview" target="_blank">
+        <div class="elemento dam" style="grid-column: 15; grid-row: 7;">3ds Max
+          <div class="info-extra">Modelado, animación y visualización 3D.</div>
+        </div>
+      </a>
+
+      <a href="https://unity.com/" target="_blank">
+        <div class="elemento dam" style="grid-column: 16; grid-row: 5;">Unity
+          <div class="info-extra">Motor de videojuegos y entornos 3D.</div>
+        </div>
+      </a>
+
+      <a href="https://www.unrealengine.com/" target="_blank">
+        <div class="elemento dam" style="grid-column: 16; grid-row: 6;">Unreal Engine
+          <div class="info-extra">Motor de juegos y gráficos 3D profesional.</div>
+        </div>
+      </a>
+
+      <a href="https://www.adobe.com/products/aftereffects.html" target="_blank">
+        <div class="elemento dam" style="grid-column: 16; grid-row: 7;">After Effects
+          <div class="info-extra">Composición y efectos visuales para video. </div>
+        </div>
+      </a>
+
+      <!-- Edición de Audio / Música (fila 2,3,4,5,6 y 7. columnas 16 y 17) -->
+
+      <a href="https://www.audacityteam.org/ " target="_blank">
+        <div class="elemento em" style="grid-column: 16; grid-row: 2;">Audacity
+          <div class="info-extra">Edición de audio libre y multiplataforma. </div>
+        </div>
+      </a>
+
+      <a href="https://www.image-line.com/ " target="_blank">
+        <div class="elemento em" style="grid-column: 16; grid-row: 3;">FL Studio
+          <div class="info-extra">Producción musical y edición de audio. </div>
+        </div>
+      </a>
+
+      <a href="https://www.ableton.com/ " target="_blank">
+        <div class="elemento em" style="grid-column: 16; grid-row: 4;">Ableton Live
+          <div class="info-extra">Software de producción y performance musical. </div>
+        </div>
+      </a>
+
+      <a href="https://www.apple.com/logic-pro " target="_blank">
+        <div class="elemento em" style="grid-column: 17; grid-row: 2;">Logic Pro
+          <div class="info-extra">Producción musical avanzada (Mac). </div>
+        </div>
+      </a>
+
+      <a href="https://www.apple.com/mac/garageband " target="_blank">
+        <div class="elemento em" style="grid-column: 17; grid-row: 3;">GarageBand
+          <div class="info-extra">Creación de música fácil y rápida (Mac). </div>
+        </div>
+      </a>
+
+      <!-- Herramientas de Backup / Recuperación / Cloud Storage (fila 2,3,4,5,6 y 7. columnas 17 y 18) -->
+
+      <a href="https://www.google.com/drive/ " target="_blank">
+        <div class="elemento hrc" style="grid-column: 17; grid-row: 4;">Google Drive
+          <div class="info-extra">Almacenamiento en la nube y colaboración. </div>
+        </div>
+      </a>
+
+      <a href="https://www.microsoft.com/es-ar/microsoft-365/onedrive/online-cloud-storage " target="_blank">
+        <div class="elemento hrc" style="grid-column: 17; grid-row: 5;">OneDrive
+          <div class="info-extra">Nube para archivos y sincronización de Microsoft. </div>
+        </div>
+      </a>
+
+      <a href="https://www.dropbox.com/ " target="_blank">
+        <div class="elemento hrc" style="grid-column: 17; grid-row: 6;">Dropbox
+          <div class="info-extra">Almacenamiento y compartición de archivos en la nube. </div>
+        </div>
+      </a>
+
+      <a href="https://www.acronis.com/ " target="_blank">
+        <div class="elemento hrc" style="grid-column: 17; grid-row: 7;">Acronis True Image
+          <div class="info-extra">Backup y recuperación de sistemas y datos. </div>
+        </div>
+      </a>
+
+      <a href="https://www.macrium.com/reflectfree " target="_blank">
+        <div class="elemento hrc" style="grid-column: 18; grid-row: 6;">Macrium Reflect
+          <div class="info-extra">Software de backup y clonación de discos. </div>
+        </div>
+      </a>
+
+      <a href="https://www.backblaze.com/ " target="_blank">
+        <div class="elemento hrc" style="grid-column: 18; grid-row: 7;">Backblaze
+          <div class="info-extra">Backup automático en la nube. </div>
+        </div>
+      </a>
+
+      <!-- Herramientas de Comunicación / Colaboración (fila 2,3,4,5,6 y 7. columnas 18 y 19) -->
+
+      <a href="https://slack.com/ " target="_blank">
+        <div class="elemento hcc" style="grid-column: 18; grid-row: 4;">Slack 2
+          <div class="info-extra">Comunicación empresarial y canales de equipo. </div>
+        </div>
+      </a>
+
+      <a href="https://discord.com/ " target="_blank">
+        <div class="elemento hcc" style="grid-column: 18; grid-row: 5;">Discord
+          <div class="info-extra">Comunicación por voz, chat y comunidad. </div>
+        </div>
+      </a>
+
+      <a href="https://www.microsoft.com/es-ar/microsoft-teams/group-chat-software " target="_blank">
+        <div class="elemento hcc" style="grid-column: 18; grid-row: 2;">Microsoft Teams 2
+          <div class="info-extra">Videollamadas y trabajo colaborativo. </div>
+        </div>
+      </a>
+
+      <a href="https://zoom.us/ " target="_blank">
+        <div class="elemento hcc" style="grid-column: 18; grid-row: 3;">Zoom
+          <div class="info-extra">Videoconferencias y reuniones online. </div>
+        </div>
+      </a>
+
+      <a href="https://meet.google.com/ " target="_blank">
+        <div class="elemento hcc" style="grid-column: 19; grid-row: 1;">Google Meet
+          <div class="info-extra">Reuniones y videollamadas online. </div>
+        </div>
+      </a>
+
+      <!-- Automatización / Productividad filas 2,3,4,5,6,7 columnas 19 -->
+
+      <a href="https://zapier.com " target="_blank">
+        <div class="elemento ap" style="grid-column: 19; grid-row: 2;">Zapier
+          <div class="info-extra">Conecta diferentes aplicaciones y automatiza flujos de trabajo sin programar. </div>
+        </div>
+      </a>
+
+      <a href="https://ifttt.com " target="_blank">
+        <div class="elemento ap" style="grid-column: 19; grid-row: 3;">IFTTT
+          <div class="info-extra">Permite automatizar acciones entre apps y servicios (ejemplo: guardar adjuntos de Gmail en Drive). </div>
+        </div>
+      </a>
+
+      <a href="https://www.notion.so " target="_blank">
+        <div class="elemento ap" style="grid-column: 19; grid-row: 4;">Notion
+          <div class="info-extra">Herramienta de organización y productividad: notas, bases de datos, tareas y más </div>
+        </div>
+      </a>
+
+      <a href="https://trello.com" target="_blank">
+        <div class="elemento ap" style="grid-column: 19; grid-row: 5;">Trello
+          <div class="info-extra">Gestión de proyectos con tableros y tarjetas, ideal para organizar equipos o tareas personales. </div>
+        </div>
+      </a>
+
+      <a href="https://obsidian.md " target="_blank">
+        <div class="elemento ap" style="grid-column: 19; grid-row: 6;">Obsidian
+          <div class="info-extra">Editor de notas con enlaces bidireccionales, pensado para organizar conocimiento como una red. </div>
+        </div>
+      </a>
+
+      <a href="https://todoist.com " target="_blank">
+        <div class="elemento ap" style="grid-column: 19; grid-row: 7;">Todoist
+          <div class="info-extra">Gestor de listas de tareas con recordatorios, proyectos y organización por prioridades. </div>
+        </div>
+      </a>
+
+      <!-- fin de la fokin tabla-->
+
+
+      
+
+
+
+
+
+  </div>
+</div>
+
+
+<script>
+document.querySelectorAll('.menu-categorias button').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.menu-categorias button').forEach(b => b.classList.remove('activo'));
+    this.classList.add('activo');
+    const cat = this.getAttribute('data-cat');
+    document.querySelectorAll('.elemento').forEach(el => {
+      if (cat === 'all' || el.classList.contains(cat)) {
+        el.classList.remove('filtrado');
+      } else {
+        el.classList.add('filtrado');
+      }
+    });
+  });
+});
+</script>
+
+<script>
+document.querySelectorAll('.elemento').forEach(el => {
+  let timer;
+  el.addEventListener('mouseenter', () => {
+    timer = setTimeout(() => {
+      el.classList.add('expandido');
+      const info = el.querySelector('.info-extra');
+      if(info) info.style.display = 'block';
+    }, 1000); // segundos
+  });
+  el.addEventListener('mouseleave', () => {
+    clearTimeout(timer);
+    el.classList.remove('expandido');
+    const info = el.querySelector('.info-extra');
+    if(info) info.style.display = 'none';
+  });
+});
+</script>
+<!-- curiosito....... -->
+</body>
+</html>

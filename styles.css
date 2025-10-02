@@ -1,0 +1,166 @@
+.contenedor-tabla {
+  width: 100vw;         /* Ocupa todo el ancho de la ventana */
+  max-width: 100vw;     /* No más que el ancho de la ventana */
+  margin: 0;            /* Sin margen automático */
+  box-sizing: border-box;
+  padding:0 10px;           /* Sin padding lateral */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000f5;
+  margin: 0; /* Para que no queden bordes blancos alrededor */
+}
+
+
+/*parece que te gusta leer codigo ageno eh? jaja*/
+
+h1 {
+  color: #fff;                /* Cambia el color del texto */
+  background: #842cff;        /* Fondo del título */
+  padding: 12px 24px;         /* Espacio interno */
+  border-radius: 10px;        /* Bordes redondeados */
+  margin-bottom: 15px;        /* Espacio debajo del título */
+  text-align: center;         /* Centra el texto */
+  box-shadow: 0 2px 8px #0003;/* Sombra opcional */
+}
+
+.tabla {
+  display: grid;                        
+  grid-template-columns: repeat(18,1fr);
+  grid-auto-rows: 50px;                 
+  gap: 5px;                             
+  background-color: rgba(107, 107, 107, 0.358); 
+  padding: 5px;                         
+  border-radius: 10px;                  
+  position: relative;                   
+  max-width: 100%;                      
+  overflow-x: auto;                     /* Muestra scroll horizontal si el contenido se desborda */
+  min-width: 1000px;                    /* Ancho mínimo de la tabla para evitar que las celdas sean demasiado pequeñas */
+}
+
+a {
+  display: contents; /* Hace que el <a> no afecte el layout del grid */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* que tratas de averiguar? jaja*/
+
+.elemento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 1s, background-color 1s, color 1s, box-shadow 1.5s;
+}
+.hueco {
+  background-color: transparent;
+  padding: 5px;
+}
+
+.elemento:hover {
+  transform: scale(1);
+  background-color: #ffffff00; /* Cambia a un color más brillante */
+  box-shadow: 0 4px 8px rgb(132, 44, 255);
+  color: #ffffff;
+}
+.info-extra {
+  display: none;
+  position: absolute;
+  background: #222;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  min-width: 180px;
+  font-size: 0.9em;
+  box-shadow: 0 2px 8px #0006;
+}
+.elemento {
+  position: relative;
+}
+.elemento.expandido {
+  transform: scale(1.2);
+  z-index: 20;
+}
+
+/* Colores por categoría */
+
+.so { background-color: #fc80a7; }       /* Sistemas Operativos */
+.ide { background-color: #8e9bff; }      /* IDE / Editores */
+.dam { background-color: #A5D6A7; }     /*Diseño 3D / Animación / Multimedia avanzada */
+.redes { background-color: #4fc3d7; }    /* Redes / Seguridad */
+.vr { background-color: #b47eff; }       /* Virtualización / Contenedores */
+.bd { background-color: #FFF59D; }       /* Bases de Datos */
+.ofi { background-color: #ffb13c; }      /* Ofimática */
+.edicion { background-color: #f5f4ff; }   /* Edición Multimedia */
+.cs { background-color: #00559b;}       /* ciberseguridad */
+.cgcodigo { background-color: #ff6f00; } /* Control de versiones / Código */
+.std { background-color: #757575; }      /* Soporte técnico / Diagnóstico */
+
+.dwf { background-color: #8c7dfb; }      /* Diseño web / Frontend */
+.vca { background-color: #00ac95; }      /* Virtualización / Contenedores avanzados */
+.sep { background-color: #fffc52; }        /* Virtualización / Contenedores avanzados */
+.em { background-color: #caff57; }       /* edicion / musica */ 
+.hrc { background-color: #11a2ca; }      /* backup / recuperacion / cloud storage */
+.hcc { background-color: #00bc61; }      /* herramientas comunicacion / colaboracion */
+.dp { background-color: #ffaad0; }       /* Documentacion / Productividad */
+.ap { background-color: #d75d00; }       /* automatizacion / productividad */
+
+/* Fondo de partículas */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Queda detrás de la tabla */
+}
+
+.menu-categorias {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+.menu-categorias button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.5s;
+}
+.menu-categorias button.activo {
+  background: #842cff;
+  color: #fff;
+}
+.elemento.filtrado {
+  opacity: 0.2;
+  pointer-events: none;
+  filter: grayscale(1);
+  transition: opacity 1.5s, filter 1.5s;
+}
+.menu-categorias {
+  display: flex;
+  flex-wrap: wrap;      /* Permite que los botones pasen a otra línea */
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+/* admira la obra maestra de tabla que tenes aca arriba jaja. Besos :) */
